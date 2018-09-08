@@ -7,7 +7,44 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-   
+   <style type="text/css">
+   h1{
+    text-align: center;
+    }
+     .btn{
+      background-color: rgb(0, 55, 55);
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    margin-left: 500px;
+    align-self: 
+    text-decoration: initial;
+    display: inline-block;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 
+    box-shadow: 4px 4px 9px grey;
+    border-color:rgb(0, 55, 55);
+    border-radius: 5px;
+    align-content: center;
+     }
+     .btn:hover {
+      color: white;
+    box-shadow:1px 1px 7px grey; 
+  background-color: rgb(0, 90, 90);
+     }
+     .jumbotron{
+    color: rgb(12, 29, 33);
+    /*padding-top: 20px;
+    padding-bottom: 30px;*/
+    /*margin-bottom: 30px;*/
+    background-color: rgb(255,255,255);
+    border-radius: 4px!important;  
+    padding: 10px;
+  box-shadow: 0px 0px 10px rgb(230,230,230),0px 0px 10px rgb(230,230,230)!important;
+     }
+
+   </style>
   <script type="text/javascript">
     $(document).ready(function(){
     $("button").click(function(){
@@ -32,88 +69,92 @@
   </script>
 </head>
 <body>
-	<div class="container">
-  <h2>Career Recommendation System</h2>
+	<div class="container-fluid" style=>
+     
+    <div class="col-sm-12">
+    <div class="jumbotron" style="margin-top: 15px;">
+  <h1 style="color:rgb(153, 153, 102);">Career Recommendation System</h1>
   <form action="" method="POST" >
-   
-   <h3>1).Select your Hobby</h3>
+   <div class="jumbotron" style="margin-top: 15px;">
+   <h3>1).Select your Hobby.</h3>
 
-      <label><input type="radio"  value="R" name="q1"> sports</label>
+      <label><input type="radio"  value="R" name="q1" required> sports</label>
       <br>
-      <label><input type="radio" value="E" name="q1"> reading</label>
+      <label><input type="radio" value="E" name="q1" required> reading</label>
 <br>
-      <label><input type="radio" value="A"  name="q1"> drawing</label>
+      <label><input type="radio" value="A"  name="q1" required> drawing</label>
       <br>
-      <label><input type="radio" value="S" name="q1"> visiting new places</label>
+      <label><input type="radio" value="S" name="q1" required> visiting new places</label>
       <br>
       <h3>2).I am good at working independently. </h3>
-       <label><input type="radio" value="A"  name="q2"> YES</label>
+       <label><input type="radio" value="A"  name="q2" required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q2"> NO</label>
+      <label><input type="radio" value="Z" name="q2" required> NO</label>
       <br>
        <h3>3).I like to work in teams. </h3>
-       <label><input type="radio" value="S"  name="q3"> YES</label>
+       <label><input type="radio" value="S"  name="q3"required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q3"> NO</label>
+      <label><input type="radio" value="Z" name="q3" required> NO</label>
       <br>
         <h3>4).I am an ambitious person,I set my goal myself.</h3> 
-       <label><input type="radio" value="E"  name="q4"> YES</label>
+       <label><input type="radio" value="E"  name="q4" required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q4"> NO</label>
+      <label><input type="radio" value="Z" name="q4" required> NO</label>
       <br>
        <h3>5).I like to build things. </h3>
-       <label><input type="radio" value="R"  name="q5"> YES</label>
+       <label><input type="radio" value="R"  name="q5" required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q5"> NO</label>
+      <label><input type="radio" value="Z" name="q5" required> NO</label>
       <br>
        <h3>6).I like to try to help people solving their problem. </h3>
-       <label><input type="radio" value="S"  name="q6"> YES</label>
+       <label><input type="radio" value="S"  name="q6" required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q6"> NO</label>
+      <label><input type="radio" value="Z" name="q6" required> NO</label>
       <br>
-        <h3>7).I like selling things</h3> 
-       <label><input type="radio" value="E"  name="q7"> YES</label>
+        <h3>7).I like to draw.</h3> 
+       <label><input type="radio" value="A"  name="q7" required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q7"> NO</label>
+      <label><input type="radio" value="Z" name="q7" required> NO</label>
       <br>
        <h3>8).I like to play instrument or sing. </h3>
-       <label><input type="radio" value="A"  name="q8"> YES</label>
+       <label><input type="radio" value="A"  name="q8" required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q8"> NO</label>
+      <label><input type="radio" value="Z" name="q8" required> NO</label>
       <br>
        <h3>9).I would like to start my own business. </h3>
-       <label><input type="radio" value="E"  name="q9"> YES</label>
+       <label><input type="radio" value="E"  name="q9" required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q9"> NO</label>
+      <label><input type="radio" value="Z" name="q9" required> NO</label>
       <br>
         <h3>10).I like to cook.</h3> 
-       <label><input type="radio" value="R"  name="q10"> YES</label>
+       <label><input type="radio" value="R"  name="q10" required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q10"> NO</label>
+      <label><input type="radio" value="Z" name="q10" required> NO</label>
       <br>
        <h3>11).I like to get into discussion about issue. </h3>
-       <label><input type="radio" value="S"  name=q11"> YES</label>
+       <label><input type="radio" value="S"  name="q11" required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q11"> NO</label>
+      <label><input type="radio" value="Z" name="q11" required> NO</label>
       <br>
        <h3>12).I like to lead. </h3>
-       <label><input type="radio" value="E"  name="q12"> YES</label>
+       <label><input type="radio" value="E"  name="q12" required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q12"> NO</label>
+      <label><input type="radio" value="Z" name="q12" required> NO</label>
       <br>
         <h3>13).I like working outdoor.</h3> 
-       <label><input type="radio" value="R"  name="q13"> YES</label>
+       <label><input type="radio" value="R"  name="q13" required> YES</label>
       <br>
-      <label><input type="radio" value="Z" name="q13"> NO</label>
+      <label><input type="radio" value="Z" name="q13" required> NO</label>
       <br>
-       <h3>14).I like to draw.</h3> 
-       <label><input type="radio" value="A"  name="q14"> YES</label>
-      <br>
-      <label><input type="radio" value="Z" name="q14"> NO</label>
       <br>
     <button type="submit" class="btn btn-default">Submit</button>
-  </form>
-   
+    <br>
+      <br>
     </div>
+  </form>
+  </div>
+    </div>
+  </div>
+</div>
 </body>
 </html>
